@@ -8,15 +8,177 @@
 </head>
 <body>
 
-<div class="container2">
-  <div class="item0">About Me</div>
-  <div class="item1">Charles B. Capagngan / 18 Years Old / 2nd Year College</div>
-  <div class="item2">Logistic Officer - APC Bridge</div>
-  <div class="item3">Course: Bachelor of Science - Information Technology</div>  
-  <div class="item4">IT Experience: Operating Systems, Coding and Programming, Cisco Packet Tracer</div>
-  <div class="item5">Hobbies & Interests: Watching movies</div>
-  <div class="item6">Goals In Life / Dream: To travel around the word</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">My Profile</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item ms-lg-3">
+                    <button id="modeBtn" class="btn btn-outline-light btn-sm" onclick="toggleMode()">
+                        🌙 Dark Mode
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5 pt-5">
+    
+    <header id="home" class="text-center mb-5 py-4 dark-section">
+        <img src="picture.jpg" alt="Profile" class="profile-img mb-3">
+        <h1 class="fw-bolder">Cristian R. Saldua</h1>
+        <p class="lead">IT Student | Aspiring Developer</p>
+        <p id="bio" class="mt-3 mx-auto w-75">
+            I am a 2nd-year IT student at Asia Pacific College.
+        </p>
+    </header>
+
+    <section id="about" class="py-4">
+        <h2 class="mb-4">About Me</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card dark-section h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">🎓 Education</h5>
+                        <p class="mb-1"><strong>BS in Information Technology</strong></p>
+                        <p class="small">Asia Pacific College (2024 - Present)</p>
+                        <p class="mb-1"><strong>Senior High School (STEM-IT)</strong></p>
+                        <p class="small">Asia Pacific College</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card dark-section h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">✨ Quotes</h5>
+                        <p class="mt-3" style="font-style: italic;">
+                            "Whenever you want to achieve something, keep your eyes open, concentrate and make sure you know exactly what it is you want. No one can hit their target with their eyes closed." - Paulo Coelho
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card dark-section h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">🎮 Hobbies</h5>
+                        <p>In my free time, I often play with my friends. I also read manga and manhwas to pass time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card dark-section h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">🚀 Future Goals</h5>
+                        <p>My goal is to finish my education and find a job to have a stable life in the future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-4">
+        <h2 class="mb-4">Skills</h2>
+        <div class="row g-3 text-center">
+            <div class="col-6 col-md-3">
+                <div class="card dark-section h-100 skill-card-static">
+                    <div class="card-body">
+                        <div class="mb-2" style="font-size: 2rem;">🌐</div>
+                        <h6 class="fw-bold mb-0">HTML</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card dark-section h-100 skill-card-static">
+                    <div class="card-body">
+                        <div class="mb-2" style="font-size: 2rem;">🎨</div>
+                        <h6 class="fw-bold mb-0">CSS</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card dark-section h-100 skill-card-static">
+                    <div class="card-body">
+                        <div class="mb-2" style="font-size: 2rem;">⚡</div>
+                        <h6 class="fw-bold mb-0">JavaScript</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card dark-section h-100 skill-card-static">
+                    <div class="card-body">
+                        <div class="mb-2" style="font-size: 2rem;">🐍</div>
+                        <h6 class="fw-bold mb-0">Python</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="pb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card dark-section">
+                    <div class="card-body p-4">
+                        <h2 class="h4 mb-4 text-center">Get In Touch</h2>
+                        <form onsubmit="submitForm(event)">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small">Your Name</label>
+                                    <input type="text" class="form-control custom-input" placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small">Email Address</label>
+                                    <input type="email" class="form-control custom-input" placeholder="email@example.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small">Message</label>
+                                    <textarea class="form-control custom-input" rows="4" placeholder="Message..."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button class="btn btn-primary w-100 py-2 fw-bold">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p id="formMsg" class="mt-3 text-center fw-bold text-success"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
+
+<footer class="py-4 bg-black text-center text-white">
+    <div class="container small">© 2026 Cristian Saldua | My Profile</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function submitForm(e) { 
+        e.preventDefault(); 
+        document.getElementById("formMsg").innerText = "Success! Message Received."; 
+    }
+
+    function toggleMode() {
+        const body = document.body;
+        const btn = document.getElementById("modeBtn");
+        body.classList.toggle("light-mode");
+        btn.innerHTML = body.classList.contains("light-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
+    }
+</script>
+
+
 <div id="app">
   {{ message }}
 </div>

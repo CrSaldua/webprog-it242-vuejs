@@ -1,5 +1,5 @@
 <template>
-  <div clas="durian">
+  <div class="durian">
     <h2>{{ name }}</h2>
     <p>{{ message }}</p>
   </div>
@@ -22,6 +22,6 @@ export default {
     display: inline-block;
     margin: 10px;
     padding: 10px;
-    background-color: yellow;
+    background-color: lightgreen;
   }
   </style>

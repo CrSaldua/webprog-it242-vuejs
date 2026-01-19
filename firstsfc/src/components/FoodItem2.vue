@@ -1,5 +1,5 @@
 <template>
-  <div clas="Durian">
+  <div clas="durian">
     <h2>{{ name }}</h2>
     <p>{{ message }}</p>
   </div>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style>
-  .Durian {
+  .durian {
     border: dashed black 1px;
     display: inline-block;
     margin: 10px;

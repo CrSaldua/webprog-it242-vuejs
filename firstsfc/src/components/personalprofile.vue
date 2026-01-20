@@ -22,7 +22,6 @@
 
   <div class="container mt-5 pt-5">
     <header id="home" class="text-center mb-5 py-4" :class="{ 'dark-section': isDarkMode }">
-      <img src="picture.jpg" alt="Profile" class="profile-img mb-3">
       <h1 class="fw-bolder">Cristian R. Saldua</h1>
       <p class="lead">IT Student | Aspiring Developer</p>
       <p id="bio" class="mt-3 mx-auto w-75">
@@ -146,6 +145,7 @@ const skills = [
 const toggleMode = () => {
   isDarkMode.value = !isDarkMode.value
   document.body.classList.toggle('light-mode')
+  localStorage.setItem('darkMode', isDarkMode.value ? 'dark' : 'light')
 }
 
 const submitForm = () => {
@@ -165,8 +165,6 @@ onMounted(() => {
     document.body.classList.add('light-mode')
   }
 })
-
-defineExpose({ toggleMode })
 </script>
 
 <style src="./css/personalprofile.css"></style>

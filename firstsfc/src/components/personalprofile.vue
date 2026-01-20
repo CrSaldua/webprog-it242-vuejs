@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="css/css-grid.css">
-<title>WEBPROG BSIT-242</title>
-</head>
-<body>
-<h1>Personal Profile Web page </h1>
-<p>
-    <b>
+<template>
 Im Cristian<br>
 Asia Pacific College<br>
 Course: BSIT- 242 <br>
@@ -30,7 +21,6 @@ Goals In Life / Dream:to be rich <br>
   <div class = image><p>This is my friend Jared</p><img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="jared"></div>
   
 </div>
-
-
-</body>
-</html>
+</template>
+<script></script>
+<style src="./css/personalprofile.css"></style>

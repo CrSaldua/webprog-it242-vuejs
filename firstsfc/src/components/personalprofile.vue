@@ -9,28 +9,16 @@
             Asia Pacific College<br>
             Course: BSIT- 242<br>
             IT Experience: html and css<br>
-            Hobbies & Interest: Playing```vue
-<template>
-  <div class="main-wrapper">
-    <div class="grid-container">
-      <div class="header">
-        <h1>Personal Profile Web page</h1>
-        <p>
-          <b>
-            Im Cristian<br>
-            Asia Pacific College<br>
-            Course: BSIT- 242<br>
-            IT Experience: html and css<br>
             Hobbies & Interest: Playing online game with my friends<br>
             Goals In Life / Dream: to be rich
           </b>
-          <img 
-            src="https://media.licdn.com/dms/image/v2/D5603AQFpB9rCFiMUyw/profile-displayphoto-scale_200_200/B56ZqnKlsOKwAc-/0/1763741163274?e=2147483647&v=beta&t=vi0oROWu351SApec0r5CoHkB6NCjI2s3b4KE2pWIg-U" 
-            alt="Girl with a jacket" 
-            width="500" 
-            height="600"
-          >
         </p>
+        <img 
+          src="https://media.licdn.com/dms/image/v2/D5603AQFpB9rCFiMUyw/profile-displayphoto-scale_200_200/B56ZqnKlsOKwAc-/0/1763741163274?e=2147483647&v=beta&t=vi0oROWu351SApec0r5CoHkB6NCjI2s3b4KE2pWIg-U" 
+          alt="Girl with a jacket" 
+          width="500" 
+          height="600"
+        >
       </div>
 
       <div class="header">
